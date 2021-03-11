@@ -1,8 +1,8 @@
 name: gnss_status
-description: A new flutter plugin project.
-version: 0.0.1
-author:
-homepage:
+description: Get GNSS Satus Data for Android on Flutter
+version: 1.0.0
+author: Jorge Hernandez <jorgeho1995@gmail.com>
+homepage: https://github.com/jorgeho1995/gnss_status
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

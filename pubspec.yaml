@@ -1,6 +1,6 @@
 name: gnss_status
-description: Get GNSS Satus Data for Android on Flutter
-version: 1.0.0
+description: A package that allows you to easily fetch the GNSSStatus via inbuilt streams
+version: 1.0.1
 author: Jorge Hernandez <jorgeho1995@gmail.com>
 homepage: https://github.com/jorgeho1995/gnss_status
 
@@ -30,6 +30,12 @@ flutter:
       android:
         package: dev.jorgeho1995.gnss_status
         pluginClass: GnssStatusPlugin
+      ios:
+        pluginClass: RawGnssPlugin
+      macos:
+        pluginClass: RawGnssPlugin
+      web:
+        pluginClass: RawGnssPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

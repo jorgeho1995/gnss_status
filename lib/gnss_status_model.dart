@@ -10,19 +10,19 @@ String gnssStatusModelToJson(GnssStatusModel data) =>
 class GnssStatusModel {
   GnssStatusModel({
     this.satelliteCount,
-    this.hashCode,
+    this.hashCodec,
     this.status,
   });
 
   int satelliteCount;
-  int hashCode;
+  int hashCodec;
   List<Status> status;
 
   factory GnssStatusModel.fromJson(Map<String, dynamic> json) =>
       GnssStatusModel(
         satelliteCount:
             json["satelliteCount"] == null ? null : json["satelliteCount"],
-        hashCode: json["hashCode"] == null ? null : json["hashCode"],
+        hashCodec: json["hashCode"] == null ? null : json["hashCode"],
         status: json["status"] == null
             ? null
             : List<Status>.from(json["status"]
@@ -31,7 +31,7 @@ class GnssStatusModel {
 
   Map<String, dynamic> toJson() => {
         "satelliteCount": satelliteCount == null ? null : satelliteCount,
-        "hashCode": hashCode == null ? null : hashCode,
+        "hashCode": hashCodec == null ? null : hashCodec,
         "status": status == null
             ? null
             : List<dynamic>.from(status.map((x) => x.toJson())),
